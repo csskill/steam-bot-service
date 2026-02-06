@@ -1,28 +1,25 @@
 {
   "name": "steam-bot-service",
   "version": "1.0.0",
-  "description": "Persistent Steam bot service with a simple HTTP API",
-  "main": "steam-bot-service.js",
+  "description": "Persistent Steam bot with HTTP API",
+  "main": "src/index.js",
   "bin": {
-    "steam-bot-service": "./steam-bot-service.js"
+    "steam-bot-service": "bin/steam-bot-service.js"
   },
-  "scripts": {
-    "start": "node steam-bot-service.js"
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.4",
+    "steam-totp": "^2.1.0",
+    "steam-user": "^5.0.0"
   },
   "keywords": [
     "steam",
-    "steam-bot",
-    "steam-user",
     "bot",
-    "cs2"
+    "steam-user",
+    "api"
   ],
-  "author": "Ole Haugset - CSSkill.com",
-  "license": "MIT",
-  "dependencies": {
-    "steam-user": "^5.0.0",
-    "steam-totp": "^2.1.1"
-  },
-  "engines": {
-    "node": ">=18"
-  }
+  "license": "MIT"
 }
