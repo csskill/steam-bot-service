@@ -7,7 +7,8 @@ const {
   STEAM_USERNAME,
   STEAM_PASSWORD,
   STEAM_SHARED_SECRET,
-  PORT = 5001
+  PORT = 5001,
+  STEAM_GUARD_CODE
 } = process.env;
 
 if (!STEAM_USERNAME || !STEAM_PASSWORD) {
@@ -23,7 +24,7 @@ const bot = new SteamBotService({
 
 const server = createServer(bot, { port: PORT });
 
-bot.login()
+bot.login(STEAM_GUARD_CODE)
   .then(() => console.log('✅ Steam Bot ready'))
   .catch(err => {
     console.error('❌ Login failed:', err.message);

@@ -58,6 +58,7 @@ The service is configured entirely via environment variables.
 |STEAM_USERNAME|yes|Steam account username|
 |STEAM_PASSWORD|yes|Steam account password|
 |STEAM_SHARED_SECRET|no|Steam Guard shared secret (for 2FA)|
+|STEAM_GUARD_CODE|no|Steam 2FA code (if not shared secret is used)|
 |PORT|no|HTTP server port (default: 5001)|
 
 Example:
