@@ -1,6 +1,6 @@
 {
   "name": "steam-bot-service",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Persistent Steam bot with HTTP API",
   "main": "src/index.js",
   "bin": {
